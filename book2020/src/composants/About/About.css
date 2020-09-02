@@ -1,0 +1,27 @@
+.containerAbout {
+    display: flex;
+}
+
+.avatarIcone {
+    height: 10em;
+    width: 10em;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.descriptif, .avatar {
+    padding: 2em;
+}
+
+.img-flower {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: -100px;
+    left: -50px;
+}
+
+.citation{
+    color: #03989E;
+}

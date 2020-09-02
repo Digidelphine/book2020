@@ -1,0 +1,43 @@
+.titre {
+    margin: 24px;
+    color: #03989E;
+}
+.navbar {
+    justify-content: center;
+    background-color: #F6EDEF;
+}
+
+.navbar ul li a {
+    color: #3C3C3C;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: small;
+}
+
+#navbarToggle {
+    justify-content: center;
+}
+
+#navbarNav {
+    justify-content: center;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+}
+  
+a:hover::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    border: 2px solid white;
+    color: white;
+}
+
+.test:hover {
+    color:#03989E;
+    font-weight: 500;
+}
