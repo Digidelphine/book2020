@@ -1,0 +1,66 @@
+/* ITEM 
+* ------------------ */
+.item {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8em;
+
+    background: #F6EDEFff;
+    margin: 0 0 1em;
+    width: 100%;
+
+    -webkit-transition:1s ease all;
+    border-radius: 10px;
+    overflow: hidden; /* to affect the inner elements with the radius */
+
+    /*
+    font-family: 'Alata', sans-serif;
+    border: 2px solid black;
+    */
+}
+
+.item img{ 
+    max-width:100%;
+    font-size: 0;
+    height: auto;
+    /* to be sure to don't have a spacing after the img due to the inline block function */
+}
+.test {
+    display: flex;
+}
+
+.item-icon {
+    border: 2px solid black;
+    border-radius: 50%;
+    background: #fff;
+    
+    font-size: 1em;
+    display: flex; /* flex is for center verticaly and horizontaly the number */
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 0 2px 2px 0; /* I display right and bottom padding because of the font who is not center par default : delete if you change the font */
+    
+    position: absolute;
+    margin: 10px;
+}
+
+.item .title {
+    border: 0px solid blue;
+    padding: 10px 10px 14px;
+}
+
+.description {
+    color: grey;
+    font-size: 0.6em;
+}
+
+a, a:hover {
+    color: #3C3C3C;
+    text-decoration: none;
+}
+
+.img-fluid {
+    border-radius: 1em;
+}

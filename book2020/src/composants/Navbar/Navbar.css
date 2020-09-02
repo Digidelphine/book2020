@@ -5,6 +5,7 @@
 .navbar {
     justify-content: center;
     background-color: #F6EDEF;
+    margin-bottom: 2em;
 }
 
 .navbar ul li a {

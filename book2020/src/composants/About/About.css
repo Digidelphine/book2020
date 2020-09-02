@@ -1,5 +1,7 @@
 .containerAbout {
     display: flex;
+   
+    align-items: center;
 }
 
 .avatarIcone {
@@ -14,14 +16,7 @@
     padding: 2em;
 }
 
-.img-flower {
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    bottom: -100px;
-    left: -50px;
-}
-
 .citation{
+    margin: 1em;
     color: #03989E;
 }

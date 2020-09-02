@@ -1,10 +1,8 @@
 import React from 'react'
 import './About.css'
 import img from '../../img/avatar.jpg'
-import flower from '../../img/flower.png'
 
 function About() {
-    console.log(img)
   return (
       <>
         <div className="containerAbout">
@@ -21,9 +19,9 @@ function About() {
                 </p>
                 <p className="citation">“ Seul n’a de valeur que le travail réalisé en profondeur dans 
                     un engagement total et dans une lutte où l’on se livre tout 
-                    entier ” Werner Bishop</p>
+                    entier ” <br/>Werner Bishop
+                </p>
             </div>
-            <img className="img-flower" src={flower} alt="flower" />
         </div>
       </>
   )
