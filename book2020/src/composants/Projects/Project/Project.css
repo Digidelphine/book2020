@@ -25,12 +25,14 @@
     height: auto;
     /* to be sure to don't have a spacing after the img due to the inline block function */
 }
-.test {
+
+.group-icons {
     display: flex;
+    position: absolute;
 }
 
 .item-icon {
-    border: 2px solid black;
+    border: 4px solid;
     border-radius: 50%;
     background: #fff;
     
@@ -42,8 +44,9 @@
     height: 50px;
     padding: 0 2px 2px 0; /* I display right and bottom padding because of the font who is not center par default : delete if you change the font */
     
-    position: absolute;
-    margin: 10px;
+    position: relative;
+    margin: 10px 0 10px 10px;
+    z-index: 1;
 }
 
 .item .title {
@@ -63,4 +66,8 @@ a, a:hover {
 
 .img-fluid {
     border-radius: 1em;
+}
+
+.french {
+    padding: 1em;
 }

@@ -8,6 +8,8 @@ function About() {
         <div className="containerAbout">
             <div className="avatar">
                 <div className="avatarIcone" style={{ backgroundImage: `url(${img})`}}></div>
+                <div className="circle-bg circle-1 avatarIcone"></div>
+                <div className="circle-bg circle-2 avatarIcone"></div>
             </div>
             <div className="descriptif">
                 <h2>Bienvenue!</h2>

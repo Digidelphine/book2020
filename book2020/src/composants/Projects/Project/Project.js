@@ -2,17 +2,38 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Project.css'
 
+import { SiAdobexd } from 'react-icons/si'
 import { FiFigma } from 'react-icons/fi'
+import { MdError } from 'react-icons/md'
 
-function Project(props) {
-    const data = props.props;
+function Project({props}) {
+
+    const data = props
     console.log(data);
-    
+
+    const testIcons = ( icon, i) => {
+        let myIcon = ''
+        const iconCss = { color: `${icon.color}` }
+        switch (icon.name) {
+            case 'figma':
+                myIcon = <FiFigma />
+                break
+            case 'adobe':
+                myIcon = <SiAdobexd />
+                break
+            default:
+                myIcon = <MdError />
+        }
+        return <div key={i} className="item-icon" style={iconCss}>{ myIcon }</div>
+    }
+
     return (
         <>
             <div className="item">
                 <Link className="item-click" to="#" data-toggle="modal" data-target={`#modal${data.id}`}>
-                    <div className="item-icon"><FiFigma /></div>
+                    <div className="group-icons">
+                        { data.icons ? data.icons.map( (icon, i) => testIcons(icon, i) ) : null }
+                    </div>
                     <img src={ data.cover } alt="exemple"/>
                     <div className="title">
                         { data.title }

@@ -8,7 +8,7 @@ function Projects() {
     const [datas,] = useState([
         {
             id: 1,
-            icon: { name: 'FiFigma', path: 'react-icons/fi' },
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
             cover: '../../../img/cover1.jpg',
             title: 'Le Second Empire',
             description: 'Brasserie parisienne',
@@ -20,7 +20,7 @@ function Projects() {
         },
         {
             id: 2,
-            icon: { name: 'FiFigma', path: 'react-icons/fi' },
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
             cover: '../../../img/cover2.jpg',
             title: 'Booker',
             description: 'Partage de livre' ,
@@ -32,7 +32,7 @@ function Projects() {
         },
         {
             id: 3,
-            icon: { name: 'FiFigma', path: 'react-icons/fi' },
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
             cover: '../../../img/cover3.jpg',
             title: 'Yapla',
             description: 'Plateforme de gestion pour association' ,
@@ -44,7 +44,7 @@ function Projects() {
         },
         {
             id: 4,
-            icon: { name: 'FiFigma', path: 'react-icons/fi' },
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
             cover: '../../../img/cover4.jpg',
             title: 'Assurance',
             description: 'Parcours utilisateur' ,
@@ -56,7 +56,7 @@ function Projects() {
         },
         {
             id: 5,
-            icon: { name: 'FiFigma', path: 'react-icons/fi' },
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
             cover: '../../../img/cover4.jpg',
             title: 'Socoon',
             description: 'Application d\'entraide intergénérationnel',
@@ -72,7 +72,6 @@ function Projects() {
         <>
             <div className="css-masonry">
                 { datas.map((item, i) => <Project props={ item } key={ i } />) }
-
                 <div className="item"> 
                     <div className="title">
                         <p className="french">
@@ -80,7 +79,6 @@ function Projects() {
                         </p>
                     </div>  
                 </div>
-
             </div>
         </>
     )
