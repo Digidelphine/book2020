@@ -4,6 +4,7 @@ import './Project.css'
 
 import { SiAdobexd } from 'react-icons/si'
 import { FiFigma } from 'react-icons/fi'
+import { SiAdobephotoshop } from 'react-icons/si'
 import { MdError } from 'react-icons/md'
 
 function Project({props}) {
@@ -20,6 +21,9 @@ function Project({props}) {
                 break
             case 'adobe':
                 myIcon = <SiAdobexd />
+                break
+            case 'photoshop':
+                myIcon = <SiAdobephotoshop />
                 break
             default:
                 myIcon = <MdError />

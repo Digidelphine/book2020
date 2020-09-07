@@ -20,7 +20,7 @@ function Projects() {
         },
         {
             id: 2,
-            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
+            icons: [{ name: 'photoshop', color: '#31a8ff' }],
             cover: '../../../img/cover2.jpg',
             title: 'Booker',
             description: 'Partage de livre' ,
@@ -32,7 +32,7 @@ function Projects() {
         },
         {
             id: 3,
-            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'photoshop', color: '#31a8ff' }],
             cover: '../../../img/cover3.jpg',
             title: 'Yapla',
             description: 'Plateforme de gestion pour association' ,
