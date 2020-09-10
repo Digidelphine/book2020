@@ -42,3 +42,15 @@ a:hover::after {
     color:#03989E;
     font-weight: 500;
 }
+
+.title {
+    padding: 2em;
+    display: block;
+    color: #03989E;
+    text-transform: uppercase;
+}
+
+.title span {
+    font-size: 1.5em;
+    font-family: 'Anthon', sans-serif;
+}

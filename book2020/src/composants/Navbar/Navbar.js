@@ -2,11 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { FaHamburger } from "react-icons/fa"
+import Typed from 'react-typed'
 
 function Navbar() {
   return (
       <>
-        <h2 className="titre">Delphine Gaspar</h2>
+        <Typed className="title" strings={['Delphine Gaspar ', 'UX Designer ']}
+                typeSpeed={90} backSpeed={90} loop
+        />
         <nav className="navbar navbar-expand-sm">
             <div id="navbarToggle" className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"><FaHamburger/></span>

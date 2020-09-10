@@ -75,7 +75,7 @@ function Projects() {
                 <div className="item"> 
                     <div className="title">
                         <p className="french">
-                            All designs & drawings are copyright : <Link to="#" target="_blank" rel="noopener noreferrer">@delphinegaspar</Link>
+                            Encore pleins d'autres projects à venir <Link to="#" target="_blank" rel="noopener noreferrer">@delphinegaspar</Link>
                         </p>
                     </div>  
                 </div>
