@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import Card from './Card/Card'
 import './Projects.css'
-import Project from './Project/Project'
 
 function Projects() {
 
     const [datas,] = useState([
         {
             id: 1,
-            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: '#C7B9FF' }],
             cover: '../../../img/cover1.jpg',
             title: 'Le Second Empire',
             description: 'Brasserie parisienne',
@@ -44,7 +43,7 @@ function Projects() {
         },
         {
             id: 4,
-            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: '#C7B9FF' }],
             cover: '../../../img/cover4.jpg',
             title: 'Assurance',
             description: 'Parcours utilisateur' ,
@@ -56,8 +55,56 @@ function Projects() {
         },
         {
             id: 5,
-            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: 'black' }],
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: '#C7B9FF' }],
+            cover: '../../../img/cover2.jpg',
+            title: 'Socoon',
+            description: 'Application d\'entraide intergénérationnel',
+            modal: { 
+                title: 'Figma',
+                text: 'Réalisation du design du site web',
+                image: '../../../img/modal4.jpg' 
+            }
+        },
+        {
+            id: 6,
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: '#C7B9FF' }],
             cover: '../../../img/cover4.jpg',
+            title: 'Socoon',
+            description: 'Application d\'entraide intergénérationnel',
+            modal: { 
+                title: 'Figma',
+                text: 'Réalisation du design du site web',
+                image: '../../../img/modal4.jpg' 
+            }
+        },
+        {
+            id: 7,
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: '#C7B9FF' }],
+            cover: '../../../img/cover3.jpg',
+            title: 'Socoon',
+            description: 'Application d\'entraide intergénérationnel',
+            modal: { 
+                title: 'Figma',
+                text: 'Réalisation du design du site web',
+                image: '../../../img/modal4.jpg' 
+            }
+        },
+        {
+            id: 8,
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: '#C7B9FF' }],
+            cover: '../../../img/cover1.jpg',
+            title: 'Socoon',
+            description: 'Application d\'entraide intergénérationnel',
+            modal: { 
+                title: 'Figma',
+                text: 'Réalisation du design du site web',
+                image: '../../../img/modal4.jpg' 
+            }
+        },
+        {
+            id: 9,
+            icons: [{ name: 'adobe', color: '#ff61f6' },{ name: 'figma', color: '#C7B9FF' }],
+            cover: '../../../img/cover1.jpg',
             title: 'Socoon',
             description: 'Application d\'entraide intergénérationnel',
             modal: { 
@@ -69,17 +116,14 @@ function Projects() {
     ])
 
     return (
-        <>
-            <div className="css-masonry">
-                { datas.map((item, i) => <Project props={ item } key={ i } />) }
-                <div className="item"> 
-                    <div className="title">
-                        <p className="french">
-                            Encore pleins d'autres projects à venir <Link to="#" target="_blank" rel="noopener noreferrer">@delphinegaspar</Link>
-                        </p>
-                    </div>  
+        <>  
+            <div className="content-wrapper">
+                <div className="gallery-container">
+                {
+                    datas.map((item, i) => <Card props={ item } key={ i } />)
+                }
                 </div>
-            </div>
+           </div>
         </>
     )
 }
